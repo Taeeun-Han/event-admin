@@ -1,0 +1,209 @@
+/*COMMON*/
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  display: block;
+}
+
+.badge__new {
+  width: 50px;
+  height: 50px;
+  background-color: cornflowerblue;
+  color: #fff;
+  text-align: center;
+  font: 600 14px/50px "Arial, sans-serif";
+}
+
+/*INNER*/
+.inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  z-index: 9;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header .inner {
+  height: 70px;
+}
+header .inner .logo {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .inner .logo img {
+  width: 70%;
+}
+header .inner .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .inner .sub-menu ul {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+header .inner .sub-menu ul li {
+  position: relative;
+}
+header .inner .sub-menu ul li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+  transition: all 0.5s;
+}
+header .inner .sub-menu ul li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+aside {
+  background-color: #f6f5f0;
+}
+aside .inner {
+  height: 100vh;
+}
+aside .inner .aside-sub-menu {
+  height: 100%;
+  display: flex;
+}
+aside .inner .aside-sub-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside .inner .aside-sub-menu ul li {
+  padding: 25px 0px;
+  text-align: center;
+  width: 8vw;
+}
+aside .inner .aside-sub-menu ul li a {
+  font: 600 14px/1 "Arial, sans-serif";
+  padding: 25px 30px;
+  color: #333;
+  transition: all 0.3s;
+}
+aside .inner .aside-sub-menu ul li a:hover {
+  color: #999;
+}
+aside .inner .aside-sub-menu .board {
+  background-color: #eeede8;
+  padding: 50px 50px;
+  width: 100%;
+}
+aside .inner .aside-sub-menu .board .dashboard span {
+  font: 800 40px/1 "Arial, sans-serif";
+}
+aside .inner .aside-sub-menu .board .dashboard .dashboard__boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+aside .inner .aside-sub-menu .board .dashboard .dashboard__boxs .box01,
+aside .inner .aside-sub-menu .board .dashboard .dashboard__boxs .box02,
+aside .inner .aside-sub-menu .board .dashboard .dashboard__boxs .box03,
+aside .inner .aside-sub-menu .board .dashboard .dashboard__boxs .box04 {
+  background-color: #fff;
+  width: 25%;
+  height: 15vh;
+  margin-top: 30px;
+  border-radius: 5%;
+}
+aside .inner .aside-sub-menu .board .dashboard02 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 5%;
+  padding: 30px;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__txt p {
+  display: flex;
+  align-items: center;
+  font: 400 14px/1 "Arial, sans-serif";
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__txt .dashboard02__title {
+  font: 600 16px/1 "Arial, sans-serif";
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content {
+  width: 100%;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content01,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content02,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content03 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content01 .img img,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content02 .img img,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content03 .img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content01 .content,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content02 .content,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content03 .content {
+  font: 400 14px/2 "Arial, sans-serif";
+}
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content01:last-child,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content02:last-child,
+aside .inner .aside-sub-menu .board .dashboard02 .q_a .q_a__content .q_a__content03:last-child {
+  margin-bottom: 0px;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .review {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .inner .aside-sub-menu .board .dashboard02 .review p {
+  display: flex;
+  align-items: center;
+  font: 400 14px/1 "Arial, sans-serif";
+}
+aside .inner .aside-sub-menu .board .dashboard02 .review .dashboard02__title {
+  font: 600 16px/1 "Arial, sans-serif";
+}
+
+/*# sourceMappingURL=style.css.map */
